@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del menu  de navegacion */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: deepskyblue;
+}
+
+.logo {
+    margin: 25px;
+}
+
+.logo a {
+    color: white;
+}
+
+.logo,
+.menu {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.logo a,
+.menu a {
+    text-decoration: none;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu a {
+    padding: 1em;
+    color: white;
+}
+
+
+/* Estilos para cards */
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.caja1 {
+    display: flex;
+    background-color: lightpink;
+    width: 400px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja2 {
+    display: flex;
+    background-color: blueviolet;
+    width: 400px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja3 {
+    display: flex;
+    background-color: lightskyblue;
+    width: 400px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+/* Estilos footer */
+
+.footer {
+    background-color: deepskyblue;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: aliceblue;
+font-size: 25px;
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin: 60px;
+}
+
+.footer ul li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+    color: lightcyan;
+    margin: 15px;
+}
+
+/* Aca terminan los estilos de escritorio */
+
+/* Aca empiezan las media queries */
+
+@media only screen and (max-width: 800px) {
+
+   /* mobile menu de navegacion */
+
+   .flex-container {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .menu {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+   }
+
+   .logo {
+    margin-left: 8px;
+   }
+
+   /* mobile cards */
+
+   .section1 {
+    flex-direction: column;
+   }
+
+   .caja1,
+   .caja2,
+   .caja3 {
+    width: auto;
+   }
+
+ /* mobile footer */
+
+ .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+
+ }
+
+ .footer p {
+    margin-top: 40px;
+ }
+
+ .footer ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+ }
+
+ .footer ul li {
+    margin: 5px;
+ }
+
+}
+
+/* Aca empieza otra media query */
